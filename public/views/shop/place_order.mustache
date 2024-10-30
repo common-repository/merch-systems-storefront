@@ -1,0 +1,20 @@
+{{{ basket }}}
+<form action="{{ form_action_url }}" method="post">
+	<input name="{{ action_field.name }}" value="{{ action_field.value }}" type="hidden"/>
+	<div class="{{ action_field.value }}-view">
+	  <section class="title clearfix justify-content-center">
+		{{# fields }}
+			{{{ . }}}
+		{{/ fields }}
+		<br/><br/>
+		<div style="text-align:center;" class="form-group clearfix align-items-center submmit-block">
+			<div class="col-12">
+				<button class="btn btn-primary" type="submit">
+					{{ submit_button }}
+				</button>
+			</div>
+		</div>
+	  </section>
+	</div>
+	{{ common.text_required }}
+</form>

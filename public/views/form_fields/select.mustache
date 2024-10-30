@@ -1,0 +1,13 @@
+{{# items }}
+<div class="form-group row align-items-center">
+	<label for="{{ name }}" class="col-12 col-md-3 col-form-label text-md-right">{{ label }}{{# required }}*{{/ required }}</label>
+	<div class="col-12 col-md-7">
+		<select class="field-{{ name }} form-control" name="{{ name }}">
+			<option value=""></option>
+			{{# options }}
+				<option value="{{ value }}" {{ selected }}>{{ text }}</option>
+			{{/ options }}
+		</select>
+	</div>
+</div>
+{{/ items }}

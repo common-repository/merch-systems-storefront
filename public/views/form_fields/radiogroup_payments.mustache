@@ -1,0 +1,21 @@
+{{# items }}
+	{{# has_options }}
+	<fieldset class="form-group">
+		<legend><h3>{{ label }}</h3></legend>
+		{{# options }}
+		<div class="form-check row">
+			<div class="col-xs-1">
+				<input type="radio" class="form-check-input" name="{{ name }}" value="{{ id }}" {{ checked }}>
+			</div>
+			<label class="form-check-label col-xs-11 {{ valid }}">
+				<h5>{{ description }}</h5>
+				<p>{{ shippingvendor }}</p>
+				<p>{{ common.payment_costs }}: {{ paymentcosts }} {{ common.currency }}</p>
+				<p>{{ common.shipping_costs }}: {{ shippingcosts }} {{ common.currency }}</p>
+				<p><b>{{ common.total }}: {{ total }} {{ common.currency }}</b></p>
+			  </label>
+		</div>
+		{{/ options }}
+	{{/ has_options }}
+	 </fieldset>
+{{/ items }}

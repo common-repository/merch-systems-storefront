@@ -1,0 +1,11 @@
+{{# has_items }}
+<div id="main_carousel" class="carousel slide" data-ride="carousel">
+	<div class="carousel-inner" role="listbox">
+		{{# items }}
+		<div class="carousel-item active">
+			<img class="d-block img-fluid" src="{{ . }}" alt="">
+		</div>
+		{{/ items }}
+	</div>
+</div>
+{{/ has_items }}

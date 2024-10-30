@@ -1,0 +1,57 @@
+{{# item }}
+	<div class="product row" id="{{ id }}">
+		<div class="product-image col-12 col-md-6">
+			<div class="row">
+				{{# main_image }}
+				<div id="product-big-image-{{ id }}" class="col-12"><img class="img-fluid product-big-image" src="{{ image }}" /></div>
+				{{/ main_image }}
+				{{# has_images }}
+				<div class="col-12 thumbs">
+				{{# images }}
+				<a href="{{ image }}" data-image="#product-big-image-{{ id }}" target="_blank"><img class="img-fluid" src="{{ thumb }}" class=""  /></a>
+				{{/ images }}
+				</div>
+				{{/ has_images }}
+			</div>
+		</div>
+		<div class="product-info col-12 col-md-6">
+			<form action="" method="post" autocomplete="off">
+				{{# description }}<div class="product-description mb-2">{{{ description }}}</div>{{/ description }}
+				{{# extended_description }}<div class="extended-description mb-2">{{{ extended_description }}}</div>{{/ extended_description }}
+				{{# color }}<p class="product-color">{{ color }}</p>{{/ color }}
+				<p class="product-price">{{# oldprice }}<span class="product-oldprice">{{ oldprice }}</span> {{/ oldprice }}{{# price }}<span class="product-price">{{ price }} {{ common.currency }}</span>{{/ price }}</p>
+				{{# has.sizes }}<div class="d-block">
+					<h4>{{ common.sizes }}</h4>
+					<div class="form-group">
+						<select class="custom-select" name="{{ form.size_id_field }}" required="required">
+						{{# sizes }}
+						  <option value="{{ id }}">{{ description }}</option>
+						{{/ sizes }}
+						</select>
+					</div>
+				</div>
+				{{/ has.sizes }}
+				<input type="hidden" name="{{ form.action_field }}" value="{{ form.add_basket }}" />
+				<input type="hidden" name="{{ form.product_id_field }}" value="{{ id }}" />
+				<div class="d-block">
+					<h4>{{ common.amount }}</h4>
+					<div class="form-group">
+						<select class="custom-select" name="amount" required="required">
+							{{# amount }}
+						  <option {{ selected }} value="{{ index }}">{{ index }}</option>
+							{{/ amount }}
+						</select>
+					</div>
+				</div>
+				<button type="submit" class="btn"><span class="fa fa-shopping-cart"></span> {{ common.add_basket }}</button>
+			</form>
+		</div>
+	</div>
+{{/ item }}
+{{^ item }}
+	{{ empty_message }}
+{{/ item }}
+<div class="product-navigation row mt-5">
+	<div class="prev-product col-6 text-left">{{# prev_product }}<a href="{{ link }}"><p>{{ name }}</p>{{#main_image}}<div class="image"><img src="{{ thumb }}" alt="{{ name }}" /></div>{{/ main_image }}</a>{{/ prev_product}}</div>
+	<div class="next-product col-6 text-right">{{# next_product }}<a href="{{ link }}"><p>{{ name }}</p>{{#main_image}}<div class="image"><img src="{{ thumb }}" alt="{{ name }}" /></div>{{/ main_image }}{{/ next_product}}</a></div>
+</div>

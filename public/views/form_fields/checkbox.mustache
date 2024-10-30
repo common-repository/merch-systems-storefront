@@ -1,0 +1,10 @@
+{{# items }}
+<div class="form-check row align-items-center {{ valid }}">
+	<div class="col-12 col-md-7 offset-md-3">
+		<label for="{{ name }}" class="form-check-label ">
+			<input class="field-{{ name }} form-check-input" {{# required }}required="required"{{/ required }} {{# field_value }}checked="checked"{{/ field_value }} type="{{ type }}" name="{{ name }}" value="1" />
+			{{# link }}<a href="{{ link }}" target="_blank">{{/ link}}{{ label }}{{# link }}</a>{{/ link }}{{# required }}*{{/ required }}
+		</label>
+	</div>
+</div>
+{{/ items }}

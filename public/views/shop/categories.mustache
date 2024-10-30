@@ -1,0 +1,23 @@
+{{# has_items }}
+	<div class="row">
+	{{# items }}
+		<article class="col-12 col-md-3 text-center" id="category-{{ id }}">
+			{{# menu_image }}
+			<figure class="category category-{{ id }}">
+				<a href="{{ link }}" title="{{ name }}" class="d-block">
+					<img class="img-fluid" src="{{ menu_image }}" class=""  />
+				</a>
+			</figure>
+			{{/ menu_image }}
+			<div class="description">
+				<a href="{{ link }}" title="{{ name }}" class="d-block text-center">
+					<h5>{{ name }}</h5>
+				</a>
+			</div>
+		</article>
+	{{/ items }}
+	</div>
+{{/ has_items }}
+{{^ has_items}}
+	{{ empty_message }}
+{{/ has_items }}

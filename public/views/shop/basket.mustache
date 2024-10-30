@@ -1,0 +1,74 @@
+{{# has_items }}
+<div class="row basket-block" >
+	<div class="col-12">
+		<div class="row">	
+			{{# items }}
+			<article class="col-12 product" id="product-{{ id }}">
+				<div class="row">
+					<figure class="product-thumb col-6 col-md-2offset-3 offset-md-0">
+						<a href="{{ link }}">
+							{{# imgover }}
+							<img class="img-fluid" src="{{ imgover }}" sizes="(max-width: 380px) 100vw, 380px" />
+							{{/ imgover }}
+						</a>
+					</figure>
+					<div class="col-12 product-info col-md-10">
+						<h5>{{ name }}</h5>
+						<p>{{ common.price }}: {{ price }} {{ common.currency }}</p>
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<form class="form-inline" action="{{ form.action }}" method="post">
+									<input type="hidden" name="{{ form.action_field }}" value="{{ form.action_reduce }}" />
+									<input type="hidden" name="{{ form.product_amount }}" value="{{ amount}}" />
+									<input type="hidden" name="{{ form.product_amount_change }}" value="1" />
+									<input type="hidden" name="{{ form.product_id }}" value="{{ product_id }}" />
+									<input type="hidden" name="{{ form.item_id }}" value="{{ id }}" />
+									<button class="btn btn-default" type="submit"><span class="fa fa-minus"></span>{{ common.reduce_basket_amount }}</button>
+								</form>
+								<form class="form-inline amount clearfix" action="{{ form.action }}" method="post">
+									<input type="hidden" name="{{ form.action_field }}" value="{{ form.action_update }}" />
+									<input type="hidden" name="{{ form.product_amount }}" value="{{ amount}}" />
+									<input type="hidden" name="{{ form.product_id }}" value="{{ product_id }}" />
+									<input type="hidden" name="{{ form.item_id }}" value="{{ id }}" />
+									<input class="form-control" type="number" name="{{ form.product_amount_change }}" value="{{ amount}}" />
+									<button class="btn btn-default" type="submit"><span class="fa fa-refresh"></span>{{ common.update_basket_amount }}</button>
+								</form>
+								<form class="form-inline" action="{{ form.action }}" method="post">
+									<input type="hidden" name="{{ form.action_field }}" value="{{ form.action_add }}" />
+									<input type="hidden" name="{{ form.product_amount }}" value="{{ amount}}" />
+									<input type="hidden" name="{{ form.product_amount_change }}" value="1" />
+									<input type="hidden" name="{{ form.product_id }}" value="{{ product_id }}" />
+									<input type="hidden" name="{{ form.item_id }}" value="{{ id }}" />
+									<button class="btn btn-default" type="submit"><span class="fa fa-plus"></span>{{ common.add_basket_amount }}</button>
+								</form>
+								<form class="form-inline" action="{{ form.action }}" method="post">
+									<input type="hidden" name="{{ form.action_field }}" value="{{ form.action_remove }}" />
+									<input type="hidden" name="{{ form.product_amount }}" value="{{ amount}}" />
+									<input type="hidden" name="{{ form.product_id }}" value="{{ product_id }}" />
+									<input type="hidden" name="{{ form.item_id }}" value="{{ id }}" />
+									<button class="btn btn-danger" type="submit"><span class="fa fa-trash"></span>{{ common.remove_basket_amount }}</button>
+								</form>
+							</div>
+							<div class="col-12 col-md-3">
+								{{ common.subtotal }}: {{ subtotal }} {{ common.currency }}
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+			{{/ items }}
+		</div>
+		{{# is_main_page }}
+		<div class="row text-center">	
+			<form class="col-12" action="{{ form.checkout_action }}" method="get">
+				<input type="hidden" name="{{ form.referrer.field }}" value="{{ form.referrer.value }}" />
+				<button type="submit">{{ common.go_checkout }}</button>
+			</form>
+		</div>
+		{{/ is_main_page }}
+	</div>
+</div>
+{{/ has_items }}
+{{^ has_items}}
+	<p>{{ empty_message }}</p>
+{{/ has_items}}

@@ -1,0 +1,440 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2017-10-04 16:57+0200\n"
+"PO-Revision-Date: 2017-08-24 10:02+0200\n"
+"Last-Translator: \n"
+"Language-Team: anti-design\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.4\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: admin/MerchsysStore_Admin.php:36
+msgid "Merch Systems Store Admin"
+msgstr ""
+
+#: admin/MerchsysStore_Admin.php:37
+msgid "Store Admin"
+msgstr ""
+
+#: admin/MerchsysStore_Admin.php:46
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: admin/MerchsysStore_Admin.php:83
+msgid "Add this shortcode if you want to show a Merchsys shop in this page"
+msgstr ""
+
+#: admin/MerchsysStore_Admin.php:90
+msgid "Terms page"
+msgstr ""
+
+#: admin/MerchsysStore_Admin.php:96
+msgid "Privacy page"
+msgstr ""
+
+#: admin/MerchsysStore_Admin.php:102
+msgid "Language locale"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:16
+msgid "Settings"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:23
+msgid "Show carousel in shop main page?"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:32
+msgid "Add categories to page menu as submenu?"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:40
+msgid "Show login/logout to navigation?"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:48
+msgid "Navigation to add the login/logout and basket items to"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:50
+msgid "Please select a menu"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:61
+msgid ""
+"Menu item wrapper for added items (%l for the link, %c for the item css "
+"class and %t for the text)"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:65
+msgid ""
+"Menu item wrapper for the basket (%a for the amount of basket items, %l for "
+"the link, %c for the item css class and %t for the text)"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:69
+msgid "Maximum amount of basket items per product (default is 10)"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:73
+msgid "Go to basket after adding an item?"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:83
+msgid "Set-up"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:84
+msgid "Minimum set-up"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:85
+msgid "Options"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:87
+msgid "The Url to the privacy page."
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:88
+msgid "The Url to the Terms page."
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:89
+msgid ""
+"The locale for the teaser. If not specified it takes the default for the "
+"website."
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:91
+msgid "Example with all options"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:94
+msgid ""
+"If you use visual composer in your theme you can add the MerchSys Shop "
+"shortcode from the shortcodes list (search for MerchSys)"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:95
+msgid "Important!"
+msgstr ""
+
+#: admin/partials/merchsys_settings_page.php:96
+msgid ""
+"After activating the plugin and the initial set-up please save the "
+"permalinks in the Wp settings page in order for the shop to work."
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:204
+#, php-format
+msgid "Network Activate %s"
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:204
+msgid "Network Activate"
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:208 includes/WPS_Extend_Plugin.php:216
+#, php-format
+msgid "Delete %s"
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:208 includes/WPS_Extend_Plugin.php:216
+msgid "Delete"
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:212
+#, php-format
+msgid "Activate %s"
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:212
+msgid "Activate"
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:280
+#, php-format
+msgid "%1$s (v%2$s) is required for %3$s. Deactivating %3$s."
+msgstr ""
+
+#: includes/WPS_Extend_Plugin.php:296
+#, php-format
+msgid "%s (v%s) is required. Please %s it before activating this plugin."
+msgstr ""
+
+#: public/MerchsysStore_Public.php:94 public/includes/Shop/Basket.php:23
+msgid "Basket"
+msgstr ""
+
+#: public/MerchsysStore_Public.php:102
+msgid "Logout"
+msgstr ""
+
+#: public/MerchsysStore_Public.php:106
+msgid "Login"
+msgstr ""
+
+#: public/MerchsysStore_Public.php:161
+msgid ""
+"Please make sure that the Storekey and Passphrase are defined in your "
+"Merchsys settings page"
+msgstr ""
+
+#: public/MerchsysStore_Public.php:165
+msgid "Please add the SOAP Url in your Merchsys settings page"
+msgstr ""
+
+#: public/includes/Common/Base.php:26
+msgid "Add to basket"
+msgstr ""
+
+#: public/includes/Common/Base.php:27
+msgid "Price"
+msgstr ""
+
+#: public/includes/Common/Base.php:28
+msgid "Sizes"
+msgstr ""
+
+#: public/includes/Common/Base.php:29
+msgid "Amount"
+msgstr ""
+
+#: public/includes/Common/Base.php:30
+msgid "Shipping costs"
+msgstr ""
+
+#: public/includes/Common/Base.php:31
+msgid "Payment costs"
+msgstr ""
+
+#: public/includes/Common/Base.php:32
+msgid "Reduce"
+msgstr ""
+
+#: public/includes/Common/Base.php:33
+msgid "Add"
+msgstr ""
+
+#: public/includes/Common/Base.php:34
+msgid "Update"
+msgstr ""
+
+#: public/includes/Common/Base.php:35
+msgid "Remove"
+msgstr ""
+
+#: public/includes/Common/Base.php:36
+msgid "Subtotal"
+msgstr ""
+
+#: public/includes/Common/Base.php:37
+msgid "Total"
+msgstr ""
+
+#: public/includes/Common/Base.php:38
+msgid "Go to checkout"
+msgstr ""
+
+#: public/includes/Common/Base.php:39
+msgid "* this is a mandatory field"
+msgstr ""
+
+#: public/includes/Registration/FormLogin.php:28
+msgid "Not registered yet?"
+msgstr ""
+
+#: public/includes/Registration/FormLogin.php:30
+msgid "Click here to register"
+msgstr ""
+
+#: public/includes/Registration/FormRegister.php:25
+msgid "Complete registration"
+msgstr ""
+
+#: public/includes/Registration/Page.php:75 public/includes/Settings.php:156
+msgid "Registration complete. Please log-in"
+msgstr ""
+
+#: public/includes/Registration/Page.php:80
+msgid "There was an error. Please try again"
+msgstr ""
+
+#: public/includes/Settings.php:157
+msgid "Registration failed. Please try again."
+msgstr ""
+
+#: public/includes/Settings.php:158
+msgid "Order successful."
+msgstr ""
+
+#: public/includes/Settings.php:159
+msgid "An error occurred."
+msgstr ""
+
+#: public/includes/Settings.php:160
+#, php-format
+msgid "The field %f is required"
+msgstr ""
+
+#: public/includes/Settings.php:161
+msgid "The email is not valid"
+msgstr ""
+
+#: public/includes/Settings.php:162
+msgid "Sorry, that username already exists!"
+msgstr ""
+
+#: public/includes/Settings.php:163
+msgid "Sorry, the username you entered is not valid"
+msgstr ""
+
+#: public/includes/Settings.php:164
+#, php-format
+msgid "The fields for %f don't match"
+msgstr ""
+
+#: public/includes/Settings.php:165
+msgid "Password length must be greater than %l"
+msgstr ""
+
+#: public/includes/Settings.php:166
+msgid "This Email is already in use"
+msgstr ""
+
+#: public/includes/Settings.php:167
+msgid "The login failed. Check your credentials or try again"
+msgstr ""
+
+#: public/includes/Settings.php:168
+msgid "Username"
+msgstr ""
+
+#: public/includes/Settings.php:169
+msgid "Password"
+msgstr ""
+
+#: public/includes/Settings.php:170
+msgid "Confirm password"
+msgstr ""
+
+#: public/includes/Settings.php:171
+msgid "Email"
+msgstr ""
+
+#: public/includes/Settings.php:172
+msgid "Confirm Email"
+msgstr ""
+
+#: public/includes/Settings.php:173
+msgid "Your personal details"
+msgstr ""
+
+#: public/includes/Settings.php:174
+msgid "Company"
+msgstr ""
+
+#: public/includes/Settings.php:175
+msgid "First name"
+msgstr ""
+
+#: public/includes/Settings.php:176
+msgid "Last name"
+msgstr ""
+
+#: public/includes/Settings.php:177
+msgid "Phone"
+msgstr ""
+
+#: public/includes/Settings.php:178
+msgid "Your address"
+msgstr ""
+
+#: public/includes/Settings.php:179
+msgid "Street and number"
+msgstr ""
+
+#: public/includes/Settings.php:180
+msgid "Postcode"
+msgstr ""
+
+#: public/includes/Settings.php:181
+msgid "City"
+msgstr ""
+
+#: public/includes/Settings.php:182
+msgid "Country"
+msgstr ""
+
+#: public/includes/Settings.php:183
+msgid "Payment methods"
+msgstr ""
+
+#: public/includes/Settings.php:184
+msgid "Please select a payment method"
+msgstr ""
+
+#: public/includes/Settings.php:185
+msgid "The delivery address is different from the billing one"
+msgstr ""
+
+#: public/includes/Settings.php:186
+msgid "AGB read and accepted"
+msgstr ""
+
+#: public/includes/Settings.php:187
+msgid "Privacy read and accepted"
+msgstr ""
+
+#: public/includes/Shop/Basket.php:25
+msgid "The basket is empty"
+msgstr ""
+
+#: public/includes/Shop/Categories.php:51
+msgid "There are no categories"
+msgstr ""
+
+#: public/includes/Shop/FormCheckout.php:23
+msgid "Checkout"
+msgstr ""
+
+#: public/includes/Shop/FormCheckout.php:27
+msgid "Confirm"
+msgstr ""
+
+#: public/includes/Shop/FormOrder.php:23
+msgid "Your order"
+msgstr ""
+
+#: public/includes/Shop/FormOrder.php:27
+msgid "Confirm order"
+msgstr ""
+
+#: public/includes/Shop/Product.php:64
+msgid "The product doesn't exist"
+msgstr ""
+
+#: public/includes/Shop/Product.php:131
+msgid "Back to shop homepage"
+msgstr ""
+
+#: public/includes/Shop/Products.php:26
+msgid "There are no products for this category"
+msgstr ""
+
+#: public/includes/Shop/Products.php:29
+msgid "All products"
+msgstr ""
+
+#: public/includes/Shop/Products.php:30
+msgid "There are no products"
+msgstr ""
